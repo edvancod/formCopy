@@ -37,7 +37,10 @@ function validarSexo() {
         document.getElementById("sexo").style.border = '';
     }
 }
-
+function limparBordaSexo() {
+    
+    document.getElementById("sexo").style.border = '';
+}
 function validarInput(idItem) {
     let item = document.getElementById(idItem);
     if (item.value == '') {
@@ -105,3 +108,20 @@ function dark() {
 
 
 
+
+    // para ativar e desativar o modoDark
+    // html = document.getElementsByTagName('html')[0]
+    // ativar    html.dataset.bsTheme = 'dark'
+    // desativar html.dataset.bsTheme = ''
+
+//  Manutenções evolutiva corretiva necessárias
+//  1. O botar Modo Dark
+//  > Ao clicar no botão Modo Dark a tela deve ficar na configuração escolhida.
+
+//  2. Seleção de alguma opção sexo
+//  > Se o campo sexo estivar marcado com a borda vermelha, e o usuário selecionar alguma das opções.
+//  > A borda vermelha deve ser imediatamente removida.
+
+//  3. Na tela a mensagem de erro e dados da pessoas estão aparecendo ao mesmo tempo.
+//  > Quando os "Dados da Pessoa" é apresentado e posteriormente o usuário comete algum erro no formulário 2 mensagem aparecem.
+//  > Deve ser apresentado sempre só uma das mensagem a de erro ou a de sucesso.
