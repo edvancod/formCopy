@@ -41,6 +41,7 @@ function limparBordaSexo() {
     
     document.getElementById("sexo").style.border = '';
 }
+
 function validarInput(idItem) {
     let item = document.getElementById(idItem);
     if (item.value == '') {
